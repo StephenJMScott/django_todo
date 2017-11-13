@@ -18,3 +18,7 @@ class TestItemModel(TestCase):
     def test_item_as_string(self):
         item = TodoItem(name="An Item", done=False)
         self.assertEqual("An Item (D)", str(item))
+        
+    def test_item_not_as_string(self):
+        item = TodoItem(name="An Item", done=False)
+        self.assertEqual("An Item (N)", str(item))
