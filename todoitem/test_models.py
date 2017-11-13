@@ -16,11 +16,11 @@ class TestItemModel(TestCase):
         self.assertTrue(item.done)
         
     def test_item_as_string(self):
-        item = TodoItem(name="NOTHING", done=False)
+        item = TodoItem(name="An Item(D)", done=False)
         self.assertEqual("An Item", str(item))
         
     def test_item_not_as_string(self):
-        item = TodoItem(name="NOTHING", done=False)
+        item = TodoItem(name="An Item(N)", done=False)
         self.assertEqual("An Item", str(item))
         
         
